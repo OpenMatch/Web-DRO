@@ -9,7 +9,7 @@ python setup.py install
 cd src/openMatch
 pip install -e .
 ```
-Besides the requirements listed above, you also need to install a modified version of [Transformers](https://github.com/Veronicium/AnchorDR/tree/main/transformers) to adapt our [model](https://huggingface.co/HakHan/Web-DRO-DR).
+Besides the requirements listed above, you also need to install a modified version of [Transformers](https://github.com/Veronicium/AnchorDR/tree/main/transformers) to adapt our [model](https://huggingface.co/OpenMatch/Web-DRO).
 
 
 #### Embedding Model Training
@@ -34,7 +34,7 @@ qrels.train.tsv(format: q_id _ d_id 1)
 According to the paper, training data should be anchor-document pairs.
 Run: `experiments/cluster.sh`
 
-After this, you should have a qrel file with cluster ids.
+After this, you should have a `qrel` file with cluster ids.
 
 ### Retrieval Model Training
 prerequisites:
@@ -76,6 +76,6 @@ You can refer to [OpenMatch Documentation](https://openmatch.readthedocs.io/en/l
 
 You can download our model through [Huggingface Transformers](huggingface.co). 
 
-<b>[Web-DRO(the final model)](https://huggingface.co/HakHan/Web-DRO-DR)</b>
+<b>[Web-DRO(the final model)](https://huggingface.co/OpenMatch/Web-DRO)</b>
 
-<b>[The Embedding Model](https://huggingface.co/HakHan/Web-Graph-Embedding)</b>
+<b>[The Embedding Model](https://huggingface.co/OpenMatch/Web-Graph-Embedding)</b> (used for clustering)
