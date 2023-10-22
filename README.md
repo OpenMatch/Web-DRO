@@ -6,7 +6,6 @@
 ```
 git clone git@github.com:Hanpx20/GroupDRO_Dense_Retrieval.git
 python setup.py install
-cd src/openMatch
 pip install -e .
 ```
 Besides the requirements listed above, you also need to install a modified version of [Transformers](https://github.com/Veronicium/AnchorDR/tree/main/transformers) to adapt our [model](https://huggingface.co/OpenMatch/Web-DRO).
