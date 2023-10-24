@@ -6,6 +6,7 @@
 ```
 git clone git@github.com:Hanpx20/GroupDRO_Dense_Retrieval.git
 python setup.py install
+bash install.sh
 cd src/openMatch
 pip install -e .
 ```

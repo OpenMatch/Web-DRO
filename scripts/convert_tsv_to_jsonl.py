@@ -8,7 +8,8 @@ if len(sys.argv) > 1:
     MYPATH = sys.argv[1]
 else:
     MYPATH="/data/user_data/peixuanh/data/ClueWeb22_B/web_data/res/"
-tsv_file = MYPATH + 'corpus.tsv'
+tsv_file = os.path.join(MYPATH, 'corpus.tsv')
+
 column_names = ['id', 'title', 'content', 'url']
 df = pd.read_csv(tsv_file, sep='\t', header=None, names=column_names, quoting=csv.QUOTE_NONE)
 
