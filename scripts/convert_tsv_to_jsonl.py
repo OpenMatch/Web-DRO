@@ -10,12 +10,15 @@ else:
     MYPATH="/data/user_data/peixuanh/data/ClueWeb22_B/web_data/res/"
 tsv_file = os.path.join(MYPATH, 'corpus.tsv')
 
-column_names = ['id', 'title', 'content', 'url']
+column_names = ['id', 'title', 'content']
 df = pd.read_csv(tsv_file, sep='\t', header=None, names=column_names, quoting=csv.QUOTE_NONE)
 
 # 将数据转换为JSONL格式
-os.mkdir(MYPATH + 'jsonl/')
-jsonl_output = MYPATH + 'jsonl/corpus.jsonl'
+try:
+    os.mkdir(os.path.join(MYPATH, 'jsonl'))
+except:
+    pass
+jsonl_output = os.path.join(MYPATH, 'jsonl/corpus.jsonl')
 with open(jsonl_output, 'w', encoding='utf-8') as jsonl_file:
     for _, row in tqdm(df.iterrows()):
         data = {
