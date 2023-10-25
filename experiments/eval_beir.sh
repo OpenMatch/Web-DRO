@@ -49,8 +49,6 @@ do
         doc_temp="<title> <text>"
     fi
 
-    doc_temp="Title: Text: <text>"
-
     echo ${infer_job_name}
     
     python -m  torch.distributed.launch --use-env --nproc_per_node=4 --master_port=${PORT} -m openmatch.driver.beir_eval_pipeline \
