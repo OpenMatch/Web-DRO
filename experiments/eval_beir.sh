@@ -8,8 +8,8 @@ export DATA_DIR="TODO: path of BEIR"
 
 export CUDA_VISIBLE_DEVICES="TODO"
 export LOCAL_RANK="TODO"
-PORT = 12345
-fi
+PORT=12345
+
 dataset_name_list=(trec-covid nfcorpus fiqa arguana webis-touche2020 quora scidocs scifact nq hotpotqa dbpedia-entity fever climate-fever trec-news signal1m bioasq robust04)
 
 #IF YOU WANT TO EVALUATE cqadupstack, UNCOMMENT THE FOLLOWING LINES.
