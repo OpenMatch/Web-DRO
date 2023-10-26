@@ -1,7 +1,6 @@
 ## GroupDRO Dense Retrieval
 ### Repository for paper: Distributionally Robust Unsupervised Dense Retrieval Training on Web Graphs
 #### The Code is Based on [OpenMatch](https://github.com/OpenMatch/OpenMatch).
-
 #### Installment
 ```
 git clone git@github.com:Hanpx20/GroupDRO_Dense_Retrieval.git
@@ -12,6 +11,8 @@ pip install -e .
 ```
 Besides the requirements listed above, you also need to install a modified version of [Transformers](https://github.com/Veronicium/AnchorDR/tree/main/transformers) to adapt our [model](https://huggingface.co/OpenMatch/Web-DRO). To generate BM25 negatives on your own, you also need to install `pyserini` and `Java sdk`.
 
+#### Anchor Selection
+See [This Repo](https://github.com/Hanpx20/Anchor_Data_Preprocess).
 
 #### Embedding Model Training
 prerequisites:
