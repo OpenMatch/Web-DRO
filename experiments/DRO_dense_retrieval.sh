@@ -41,7 +41,7 @@ python -m torchrun --nproc_per_node=8 --master_port 19287 -m openmatch.driver.tr
     --fp16  \
     --per_device_train_batch_size 32 \
     --train_n_passages 8  \
-    --learning_rate 3e-5  \
+    --learning_rate 1e-5  \
     --q_max_len 32  \
     --p_max_len 128  \
     --num_train_epochs 1  \
@@ -106,7 +106,7 @@ python -m torchrun --nproc_per_node=8 --master_port 19287 -m openmatch.driver.tr
     --fp16  \
     --per_device_train_batch_size 32 \
     --train_n_passages 8  \
-    --learning_rate 3e-5  \
+    --learning_rate 1e-5  \
     --q_max_len 32  \
     --p_max_len 128  \
     --num_train_epochs 1  \
